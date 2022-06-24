@@ -1,22 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <title>TechnoByte</title>
+
+
+    <title>Registration Form</title>
 </head>
 
-<body >
+<style>
+    * {
+        margin: 0;
 
+    }
 
+    .container {
 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #6699cc;
+    }
+
+    .container h1 {
+        color: white;
+        font-family: sans-serif;
+        margin: 0%;
+    }
+
+    .registartion-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-family: sans-serif;
+        background-color: #154a68;
+        padding: 20px;
+    }
+
+    .registartion-form input,
+    .registartion-form select,
+    .registartion-form textarea {
+        border: none;
+        padding: 5px;
+        margin-top: 10px;
+        font-family: sans-serif;
+    }
+
+    .registartion-form input:focus,
+    .registartion-form textarea:focus {
+        box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+    }
+
+    .registartion-form .submit {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 20px;
+        color: rgb(44, 44, 44);
+        background-color: #ffffff;
+        border-radius: 5px;
+    }
+
+    .registartion-form .submit:hover {
+        box-shadow: 3px 3px 6px rgb(255, 214, 176);
+    }
+</style>
+
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">TechnoByte</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -39,105 +98,178 @@
                     <a class="nav-link" href="/service.html">Services</a>
                 </li>
 
+
                 <li class="nav-item active">
                     <a class="nav-link" href="/contact.html">Contact Us</a>
                 </li>
 
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+
         </div>
     </nav>
     <div class="container">
-        <div class="container my-4">
-            <h2>Contact Us</h2>
-            <form>
+        <h1>Registration Form</h1>
+        <form class="registartion-form">
+            <table>
+                <tr>
 
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Enter your Names">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select your Query</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Web</option>
-                        <option>Tech Stack</option>
-                        <option>Technology</option>
-                        <option>Others</option>
-                    </select>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-2">Are you a Member?</div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Yes
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="form-group row">
-                <div class="col-sm-2">Are you a Professor?</div>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck2">
-                        <label class="form-check-label" for="gridCheck2">
-                            Yes
-                        </label>
-                    </div>
-                </div>
-            </div>-->
-                <div class="form-group row">
-                    <div class="col-sm-2">Are you a Coder?</div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck3">
-                            <label class="form-check-label" for="gridCheck3">
-                                Yes
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                    <td><label for="name">Name:</label></td>
 
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Tell us about yourself</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea2">Elaborate Your Concern</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-                </div>
-                <button class="btn btn-primary">Submit</button>
-            </form>
+                    <td><input type="text" name="name" id="name" placeholder="your name" onblur="validate(id)">
 
-        </div>
+                        <br><span id="error"></span>
 
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>© 2020-2021 TechnoByte, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-        </footer>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td><label for="email">Email:</label></td>
+
+                    <td><input type="text" name="email" id="email" placeholder="your email" onblur="validate(id)">
+
+                        <br><span id="error2"></span>
+
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td><label for="number">Password:</label></td>
+
+                    <td><input type="password" name="password" id="password" placeholder="enter your password"
+                            onblur="validate(id)">
+
+                        <br><span id="error3"></span>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="number">PhoneNumber:</label></td>
+
+                    <td><input type="text" name="number" id="number" placeholder="your number" maxlength="10"
+                            onblur="validate(id)">
+
+                        <br><span id="error4"></span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>Male: <input type="radio" name="gender" value="male">
+                        Female: <input type="radio" name="gender" value="female">
+                        Other: <input type="radio" name="gender" value="other"></td>
+                </tr>
+                <tr>
+                    <td><label for="about">About:</label></td>
+                    <td><textarea name="about" id="about" placeholder="Write about yourself..." required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" class="submit" value="Submit" id="submit"
+                            disabled="disabled" /></td>
+                </tr>
+            </table>
+
+        </form>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
+
+<script>
+
+    // function for form varification
+    function validate(id) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var str = document.getElementById("password").value;
+        var number = document.getElementById("number").value;
+
+        if (id == "name") {
+
+            var name = document.getElementById("name").value;
+            if (name == "") {
+                document.getElementById("name").style.border = "1px solid red";
+                error.innerHTML = "<span style='color: red; font-size: 12px;'>" + "*invalid name</span>";
+                return false;
+            }
+
+            error.innerHTML = "";
+            document.getElementById("name").style.border = "";
+        }
+
+
+        // checking email
+        if (id == "email") {
+
+            var email = document.getElementById("email").value;
+            if (!email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+                document.getElementById("email").style.border = "1px solid red";
+
+                error2.innerHTML = "<span style='color: red; font-size: 12px;'>" + "*invalid email</span>"
+
+                return false;
+
+            }
+            error2.innerHTML = "";
+            document.getElementById("email").style.border = "";
+
+        }
+        // checking password
+        if (id == "password") {
+
+            var str = document.getElementById("password").value;
+            let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+            let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+            if (str == "") {
+                error3.style.backgroundColor = "";
+                error3.innerHTML = "<span style='color: red; font-size: 12px;'>" + "*Please Enter Password</span>"
+
+                return false;
+
+            } else {
+                if (strongPassword.test(str)) {
+                    error3.style.backgroundColor = "green";
+                    error3.innerHTML = "<span style='color: white; font-size: 12px; padding:10px;'>" + "Strong Password</span>"
+                }
+                else {
+                    error3.style.backgroundColor = 'red';
+                    error3.innerHTML = "<span style='color: white; font-size: 12px; padding:10px;'>" + "Weak Password</span>"
+
+                }
+            }
+
+        }
+        // checking phone 
+        if (id == "number") {
+
+            var number = document.getElementById("number");
+
+            if (!number.value.match(/^[1-9][0-9]{9}$/)) {
+
+                document.getElementById("number").style.border = "1px solid red";
+                error4.innerHTML = "<span style='color: red; font-size: 12px;'>" + "*invalid phonenumber!</span>"
+
+                return false;
+
+            }
+
+            error4.innerHTML = "";
+            document.getElementById("number").style.border = "";
+        }
+
+
+        if (!name == "" && !email == "" && !number == "" && !str == "") {
+
+            document.getElementById("submit").disabled = false;
+
+        } else {
+
+            document.getElementById("submit").disabled = true;
+
+        }
+    }
+
+</script>
+
 
 </html>
